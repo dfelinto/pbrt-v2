@@ -47,6 +47,7 @@
 #include "accelerators/grid.h"
 #include "accelerators/kdtreeaccel.h"
 #include "cameras/environment.h"
+#include "cameras/fisheye.h"
 #include "cameras/orthographic.h"
 #include "cameras/perspective.h"
 #include "film/image.h"
@@ -611,6 +612,8 @@ Camera *MakeCamera(const string &name,
         camera = CreateOrthographicCamera(paramSet, animatedCam2World, film);
     else if (name == "environment")
         camera = CreateEnvironmentCamera(paramSet, animatedCam2World, film);
+    else if (name == "fisheye")
+        camera = CreateFisheyeCamera(paramSet, animatedCam2World, film);
     else
         Warning("Camera \"%s\" unknown.", name.c_str());
     paramSet.ReportUnused();

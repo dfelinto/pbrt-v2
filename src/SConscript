@@ -37,6 +37,7 @@ accelerators_src = [ 'accelerators/bvh.cpp',
                      'accelerators/grid.cpp',
                      'accelerators/kdtreeaccel.cpp' ]
 cameras_src = [ 'cameras/environment.cpp', 
+                'cameras/fisheye.cpp',
                 'cameras/orthographic.cpp', 
                 'cameras/perspective.cpp' ]
 film_src = [ 'film/image.cpp' ]
