@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1800B06319A5600800331AD3 /* fisheye.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1800B06119A5600800331AD3 /* fisheye.cpp */; };
 		B130248E1236EE5100206AC7 /* fileutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B130248C1236EE5100206AC7 /* fileutil.cpp */; };
 		B13B5765161245F5008FFA44 /* targa.c in Sources */ = {isa = PBXBuildFile; fileRef = B13B5763161245F5008FFA44 /* targa.c */; };
 		B19397BB12083210008317C5 /* shinymetal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B19397B912083210008317C5 /* shinymetal.cpp */; };
@@ -168,6 +169,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1800B06119A5600800331AD3 /* fisheye.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fisheye.cpp; sourceTree = "<group>"; };
+		1800B06219A5600800331AD3 /* fisheye.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fisheye.h; sourceTree = "<group>"; };
 		B130248C1236EE5100206AC7 /* fileutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fileutil.cpp; sourceTree = "<group>"; };
 		B130248D1236EE5100206AC7 /* fileutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileutil.h; sourceTree = "<group>"; };
 		B13B5763161245F5008FFA44 /* targa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = targa.c; sourceTree = "<group>"; };
@@ -482,6 +485,8 @@
 		B1D8EB5D117030E500A8A49E /* cameras */ = {
 			isa = PBXGroup;
 			children = (
+				1800B06119A5600800331AD3 /* fisheye.cpp */,
+				1800B06219A5600800331AD3 /* fisheye.h */,
 				B1D8EB5E117030E500A8A49E /* environment.cpp */,
 				B1D8EB5F117030E500A8A49E /* environment.h */,
 				B1D8EB60117030E500A8A49E /* orthographic.cpp */,
@@ -845,7 +850,7 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "pbrt" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -878,6 +883,7 @@
 				B1D8EBB5117030F200A8A49E /* camera.cpp in Sources */,
 				B1D8EBB6117030F200A8A49E /* diffgeom.cpp in Sources */,
 				B1D8EBB7117030F200A8A49E /* dtrace.d in Sources */,
+				1800B06319A5600800331AD3 /* fisheye.cpp in Sources */,
 				B1D8EBB8117030F200A8A49E /* error.cpp in Sources */,
 				B1D8EBB9117030F200A8A49E /* film.cpp in Sources */,
 				B1D8EBBA117030F200A8A49E /* filter.cpp in Sources */,
