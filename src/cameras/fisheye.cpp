@@ -51,19 +51,19 @@ float FisheyeCamera::GenerateRay(const CameraSample &sample,
     float r = sqrt(u*u + v*v);
 
     if (r > rmax) {
-      Vector dir (0., 0., 0.);
-      *ray = Ray(Point(0,0,0), dir, 0.f, INFINITY);
+        Vector dir (0.f, 0.f, 0.f);
+        *ray = Ray(Point(0,0,0), dir, 0.f, INFINITY);
     }
     else {
-      float phi = acosf((r != 0.0f)? u/r: 0.0f);
-      float theta = 2.0f * asinf(r/(2.0f * lensRadius));
+        float phi = acosf((r != 0.0f)? u/r: 0.0f);
+        float theta = 2.0f * asinf(r/(2.0f * lensRadius));
 
-      if(v < 0.0f) phi = -phi;
+        if(v < 0.0f) phi = -phi;
 
-    Vector dir(cosf(theta), -cosf(phi)*sinf(theta),
-               sinf(phi) * sinf(theta));
+        Vector dir(cosf(theta), -cosf(phi)*sinf(theta),
+                   sinf(phi) * sinf(theta));
 
-    *ray = Ray(Point(0,0,0), dir, 0.f, INFINITY);
+        *ray = Ray(Point(0,0,0), dir, 0.f, INFINITY);
     }
 
     // Modify ray for depth of field
